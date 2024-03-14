@@ -1,0 +1,15 @@
+[gd_scene load_steps=3 format=3 uid="uid://dw6t2tn0ajjwm"]
+
+[ext_resource type="Texture2D" uid="uid://b05xqkabsumk1" path="res://Textures/Grass Tile.png" id="1_qak51"]
+[ext_resource type="PackedScene" uid="uid://dui4jj31p154s" path="res://Player/player.tscn" id="2_p8qsx"]
+
+[node name="World" type="Node2D"]
+
+[node name="GrassTile" type="Sprite2D" parent="."]
+texture_filter = 1
+texture_repeat = 2
+texture = ExtResource("1_qak51")
+region_enabled = true
+region_rect = Rect2(0, 0, 4000, 4000)
+
+[node name="Player" parent="." instance=ExtResource("2_p8qsx")]
