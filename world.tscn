@@ -1,7 +1,8 @@
-[gd_scene load_steps=3 format=3 uid="uid://dw6t2tn0ajjwm"]
+[gd_scene load_steps=4 format=3 uid="uid://dw6t2tn0ajjwm"]
 
 [ext_resource type="Texture2D" uid="uid://b05xqkabsumk1" path="res://Textures/Grass Tile.png" id="1_qak51"]
 [ext_resource type="PackedScene" uid="uid://dui4jj31p154s" path="res://Player/player.tscn" id="2_p8qsx"]
+[ext_resource type="PackedScene" uid="uid://bpocamtfkwwxi" path="res://Enemy/enemy_slime.tscn" id="3_8p5eu"]
 
 [node name="World" type="Node2D"]
 
@@ -13,3 +14,12 @@ region_enabled = true
 region_rect = Rect2(0, 0, 4000, 4000)
 
 [node name="Player" parent="." instance=ExtResource("2_p8qsx")]
+
+[node name="EnemySlime" parent="." instance=ExtResource("3_8p5eu")]
+position = Vector2(166, -19)
+
+[node name="EnemySlime2" parent="." instance=ExtResource("3_8p5eu")]
+position = Vector2(269, 75)
+
+[node name="EnemySlime3" parent="." instance=ExtResource("3_8p5eu")]
+position = Vector2(141, 127)
